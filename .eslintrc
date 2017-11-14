@@ -1,0 +1,8 @@
+{
+    "extends": [
+        "emakinacee-base"
+    ],
+    "rules": {
+        "no-console": 0
+    }
+}

@@ -1,0 +1,53 @@
+{
+    "name": "createjs-spritesheet-generator-ui",
+    "productName": "CreateJS Spritesheet Generator UI",
+    "version": "0.0.1",
+    "description": "An Electron app providing UI for the CreateJS Spritesheet Generator",
+    "license": "MIT",
+    "repository": "flobacher/createjs-spritesheet-generator-ui",
+    "author": {
+        "name": "Florian Bacher",
+        "email": "flo@digital-fuse.net",
+        "url": "github.com/flobacher"
+    },
+    "scripts": {
+        "start": "electron src/index.js",
+        "build": "electron-packager ./src --out=dist --asar --overwrite --all",
+        "fix": "npm run lint -- --fix",
+        "format": "prettier --write",
+        "format:all": "prettier --write \"./src/**/*.js\" \"./src/**/*.css\"",
+        "lint": "eslint --env node \"./src/**/*.js\""
+    },
+    "main": "src/index.js",
+    "dependencies": {},
+    "devDependencies": {
+        "createjs-spritesheet-generator": "0.0.3",
+        "devtron": "^1.1.0",
+        "electron": "^1.4.12",
+        "electron-debug": "^1.0.0",
+        "electron-packager": "^9.1.0",
+        "eslint": "^4.11.0",
+        "eslint-config-emakinacee-base": "^1.1.0",
+        "eslint-plugin-import": "^2.7.0",
+        "eslint-plugin-promise": "^3.5.0",
+        "eslint-plugin-standard": "^3.0.1",
+        "prettier": "^1.8.0",
+        "rimraf": "^2.6.1"
+    },
+    "prettier": {
+        "semi": true,
+        "tabWidth": 4,
+        "singleQuote": true,
+        "trailingComma": "es5",
+        "printWidth": 100,
+        "overrides": [
+            {
+                "files": "*.json",
+                "options": {
+                    "parser": "json",
+                    "tabWidth": 2
+                }
+            }
+        ]
+    }
+}
