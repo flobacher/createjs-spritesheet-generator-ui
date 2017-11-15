@@ -40,15 +40,14 @@ destinationFolderChooserBtn.addEventListener('click', () => {
 
 const ctaBtn = document.getElementById('cta');
 ctaBtn.addEventListener('click', () => {
-    console.log('cta clicked');
-    if (inputFiles && inputFiles.length > 0 && targetDirectory) {
-        console.log('create ss', targetDirectory);
+    if (inputFiles && inputFiles.length > 0 && targetDirectory && targetDirectory.length >= 1) {
+        console.log('create ss at', targetDirectory[0]);
         cjsSpritesheetGenerator({
             dest: targetDirectory[0] + '/',
             images: inputFiles,
-            outImgName: 'memory',
+            outImgName: 'spritesheet',
             outImgExt: 'png',
-            name: 'memory',
+            name: 'spritesheet',
         });
     }
 });
