@@ -1,6 +1,6 @@
-# cjs-ssg-app
+# CreateJS Spritesheet Generator UI
 
-> My striking app
+> An Electron app providing UI for the CreateJS Spritesheet Generator
 
 
 ## Dev
