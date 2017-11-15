@@ -1,7 +1,7 @@
 {
     "name": "createjs-spritesheet-generator-ui",
     "productName": "CreateJS Spritesheet Generator UI",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "An Electron app providing UI for the CreateJS Spritesheet Generator",
     "license": "MIT",
     "repository": "flobacher/createjs-spritesheet-generator-ui",
